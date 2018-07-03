@@ -1,0 +1,322 @@
+/*
+Theme Name: Simpe Never Thene
+Theme URI: https://github.com/alnever/simple-never-theme/
+Author: Alex Neverov
+Author URI: http://alneverov.ru
+Description: Simple WordPress Theme for a Personal Blog
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: simpleneverthene
+Tags: one-column, left-sidebar, custom-menu, custom-logo, featured-images, footer-widgets, post-formats, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body {
+    font-family: ubuntu;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box; /* to prevent padding-marging effects */
+    word-break: break-all;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    padding: 5px 0px 5px 5px;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 18px;
+    color: #005b0b;
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 16px;
+    color: #394400;
+    background-color: #fed148;
+}
+
+h2 > a, h2 > a:active, h2 > a:visited  {
+    font-size: 16px;
+    color: #394400;
+    text-decoration: none;
+}
+
+h2 > a:hover {
+    color: #005b0b;
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+}
+
+h3 {
+    font-family: monospace;
+    font-size: 14px;
+    color: #ce9b00;
+}
+
+h4 {
+    font-family: monospace;
+    font-size: 14px;
+    color: #005b0b;
+}
+
+h5 {
+    font-family: monospace;
+    font-size: 13px;
+    color: #005b0b;
+}
+
+h6 {
+    font-family: monospace;
+    font-size: 13px;
+    color: #ce9b00;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    margin: 10px 10px 10px 0px;
+}
+
+.alignleft {
+    float: left;
+}
+
+a, a:active, a:visited {
+    color: #005b0b;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+a:hover {
+    color: #ce9b00;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+pre {
+    max-width: 100%;
+    overflow: auto;
+}
+
+code {
+    display: block;
+    border: dotted 1px #fed148;
+    padding: 10px 0px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    font-family: courier;
+    font-size: 14px;
+    color: #000000;
+    
+}
+
+/* table */
+
+table {
+    width: 100%;
+}
+
+td, tr {
+    height: 40px;
+}
+
+tr > * {
+    border-bottom: dotted 1px #fed148;
+}
+
+th {
+    font-weight: bolder;
+}
+
+
+
+
+/* page blocks */
+
+.wrapper {
+    display: table;
+    width: 1024px;
+    padding: 3px 3px 3px 3px;
+}
+
+.container {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+/* header styles */
+.header {
+    display: block;
+    width: 100%;
+    background: #000000;
+}
+
+.header > .title {
+    color: #fed148;
+    font-size: larger;
+    padding: 5px 5px 5px 20px;
+}
+
+.header > .title > a,
+.header > .title > a:hover,
+.header > .title > a:active,
+.header > .title > a:visited {
+    color: #fed148;
+    text-decoration: none;
+}
+
+.header > .description {
+    color: #ce9b00;
+    font-style: italic;
+    padding: 5px 5px 5px 20px;
+    font-size: smaller;
+}
+
+/* content */
+.content {
+    display: block;
+    width: 80%;
+    float: left;
+}
+
+
+/* sidebar */
+.sidebar {
+    display: block;
+    width: 20%;
+    float: left;
+    padding: 3px 3px 3px 3px;
+}
+
+.sidebar li.categories > ul,
+.sidebar ul.part
+{
+    padding: 0 0 0 0;
+}
+
+.sidebar li {
+    list-style-type: none;
+}
+
+.sidebar a, .sidebar a:active, .sidebar a:visited {
+    font-family: ubuntu;
+    font-size: 12px;
+    color: #394400;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #005b0b;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+
+/* footer */
+.footer {
+    display: block;
+    float:left;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000;
+    color: #a0a0a0;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+/* posts */
+
+.entry {
+    display: table;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    border: solid 1px #fed148;
+}
+
+.entry > h2 {
+    margin-top: 0px;
+}
+
+.entry > *:not(:first-child) {
+    margin: 5px 5px 5px 5px;
+}
+
+.article {
+    display: block;
+    width: auto;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 10px;
+}
+
+.attachment-post-thumbnail {
+    display: block;
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+.size-post-thumbnail {
+    max-width: 300px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+/* post meta */
+
+.postmetadata {
+    font-family: monospace;
+    font-size: 12px;
+    color: #303030;
+}
+
+.postmetadata a, .postmetadata a:active, .postmetadata a:visited {
+    color: #ce9b00;
+    text-decoration: none;
+}
+
+.postmetadata a:hover {
+    color: #ce9b00;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+/* navigation */
+
+.navigation {
+    display: block;
+    width: 100%;
+    font-family: monospace;
+    font-size: 12px;
+        
+}
+
+.navigation .previous {
+    display: inline-block;
+    float: left;
+}
+
+.navigation .next {
+    display: inline-block;
+    float: right;
+}
+
+.navigation a, .navigation a:active, .navigation a:visited {
+    color: #394400;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.navigation a:hover {
+    text-decoration-style: dashed;
+}
+
