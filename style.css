@@ -17,6 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
     font-family: ubuntu;
     font-size: 14px;
+    background-color: #ebece5;
 }
 
 * {
@@ -146,6 +147,8 @@ th {
     display: table;
     width: 1024px;
     padding: 3px 3px 3px 3px;
+    margin: 0 auto;
+    background: #FFFFFF;
 }
 
 .container {
@@ -195,13 +198,16 @@ th {
     display: block;
     width: 20%;
     float: left;
-    padding: 3px 3px 3px 3px;
+    padding: 5px 5px 5px 5px;
 }
 
-.sidebar li.categories > ul,
-.sidebar ul.part
+.sidebar li.categories > ul, .sidebar aside ul 
 {
     padding: 0 0 0 0;
+}
+.sidebar ul.part
+{
+    padding: 0 0 0 5px;
 }
 
 .sidebar li {
@@ -219,6 +225,12 @@ th {
     color: #005b0b;
     text-decoration-line: underline;
     text-decoration-style: dotted;
+}
+
+.sidebar h3 {
+    display: block;
+    border-bottom: solid 1px #394400;
+    padding-left: 0;
 }
 
 
@@ -294,10 +306,11 @@ th {
 
 .navigation {
     display: block;
-    width: 100%;
+    width: auto;
     font-family: monospace;
     font-size: 12px;
-        
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 5px;
 }
 
 .navigation .previous {
@@ -319,4 +332,149 @@ th {
 .navigation a:hover {
     text-decoration-style: dashed;
 }
+
+/* Header menu */
+.header_menu {
+    display: table;
+    width: 100%;
+    background: #394400;
+}
+
+/* --- 1st menu level ---*/
+
+.header_menu .menu > ul,
+.header_menu ul.menu {
+    margin-top: 0px;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.header_menu .menu > ul > li,
+.header_menu  ul.menu > li.menu-item {
+    display: block;
+    float: left;
+    font-size: 18px;
+    padding: 10px 5px 10px 0px; 
+    position: relative;
+}
+
+.header_menu .menu > ul > li > a,
+.header_menu .menu > ul > li > a:active,
+.header_menu .menu > ul > li > a:visited,
+.header_menu ul.menu > li.menu-item  a,
+.header_menu ul.menu > li.menu-item  a:active,
+.header_menu ul.menu > li.menu-item  a:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px; 
+}
+
+.header_menu .menu > ul > li > a:hover,
+.header_menu ul.menu > li.menu-item > a:hover{
+    color: #fed148;
+    background-color: #005b0b;
+}
+
+/* --- 2nd menu level ---*/
+
+.header_menu .menu > ul > li > ul.children,
+.header_menu ul.menu > li.menu-item > ul.sub-menu {
+    display: none;
+    position:absolute;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.header_menu .menu > ul > li > ul.children > li,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li {
+    display: block;
+    float:none;
+    max-width: 250px;
+    width: 250px;
+    list-style-type: none;
+    font-size: 14px;
+    background-color: #ce9b00;
+    position: relative;
+}
+
+.header_menu .menu > ul > li:hover > ul.children,
+.header_menu ul.menu > li.menu-item:hover > ul.sub-menu {
+    display: block;
+}
+
+
+.header_menu .menu > ul > li > ul.children > li > a,
+.header_menu .menu > ul > li > ul.children > li > a:active,
+.header_menu .menu > ul > li > ul.children > li > a:visited, 
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li > a,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li > a:active,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li > a:visited {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.header_menu .menu > ul > li > ul.children > li > a:hover,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li > a:hover {
+    color: #fed148;
+    background-color: #005b0b;
+}
+
+.header_menu .menu > ul > li > ul.children > li.page_item_has_children > a:hover::after,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item-has-children > a:hover::after{
+    content: " >> ";
+}
+
+/* --- 3rd level menu -- */
+
+.header_menu .menu > ul > li > ul.children > li > ul.children, 
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu {
+    display: none;
+    position:absolute;
+    left: 250px;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.header_menu .menu > ul > li > ul.children > li > ul.children > li,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li {
+    display: block;
+    float:none;
+    max-width: 250px;
+    width: 250px;
+    list-style-type: none;
+    font-size: 12px;
+    background-color: #d2a519;
+    position: relative;
+}
+
+.header_menu .menu > ul > li > ul.children > li:hover > ul.children,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item:hover > ul.sub-menu {
+    display: block;
+}
+
+.header_menu .menu > ul > li > ul.children > li > ul.children > li > a,
+.header_menu .menu > ul > li > ul.children > li > ul.children > li > a:active,
+.header_menu .menu > ul > li > ul.children > li > ul.children > li > a:visited,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:active,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:visited {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.header_menu .menu > ul > li > ul.children > li > ul.children > li > a:hover,
+.header_menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:hover {
+    color: #fed148;
+    background-color: #005b0b;
+}
+
+
+
 

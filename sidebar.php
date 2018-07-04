@@ -3,7 +3,7 @@
     <div class="personal">
     </div>
     
-    
+    <!--
     <ul class="part">
         <h3><?php _e("Archives"); ?></h3>
         <?php wp_get_archives(); ?>
@@ -18,5 +18,9 @@
                                  ]); 
         ?>
     </ul>
+    -->
+    <div>
+        <?php dynamic_sidebar("left_sidebar"); ?>
+    </div>
 </div>
 <!-- end of the sidebar -->
