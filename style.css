@@ -7,8 +7,9 @@ Description: Simple WordPress Theme for a Personal Blog
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: simpleneverthene
-Tags: one-column, left-sidebar, custom-menu, custom-logo, featured-images, footer-widgets, post-formats, translation-ready
+Text Domain: simple-never-theme
+Domain Path: /languages
+Tags: one-column, left-sidebar, custom-menu, featured-images, translation-ready, blog
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -22,7 +23,8 @@ body {
 
 * {
     box-sizing: border-box; /* to prevent padding-marging effects */
-    word-break: break-all;
+    word-break: normal;
+    word-wrap: break-word;
     max-width: 100%;
 }
 
@@ -399,6 +401,7 @@ th {
     position: relative;
 }
 
+/* ... to display the 2nd level menu ... */
 .header_menu .menu > ul > li:hover > ul.children,
 .header_menu ul.menu > li.menu-item:hover > ul.sub-menu {
     display: block;

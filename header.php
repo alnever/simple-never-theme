@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <!-- meta tags -->
         <meta charset="<?php _e(bloginfo('charset')); ?>" />
@@ -11,7 +11,7 @@
         <link rel="stylesheet" id="main-style-sheet" href="<?php _e(bloginfo('stylesheet_url')); ?>" type="text/css" />
         
         <!-- title -->
-        <title><?php wp_title(); ?><?php _e(bloginfo('name')); ?></title>
+        <title><?php _e(strip_tags(get_the_title()), 'simple-never-theme'); ?><?php _e(bloginfo('name'), 'simple-never-theme'); ?></title>
 
         <!-- wp_head hook -->
         <?php wp_head(); ?>
@@ -24,12 +24,12 @@
         <!-- page header -->
         <div class="header">
             <div class="title">
-                <a href="<?php _e(bloginfo('wpurl')); ?>" title="<?php _e(bloginfo('title')); ?>">
-                    <?php _e(bloginfo('title')); ?>
+                <a href="<?php _e(bloginfo('wpurl')); ?>" title="<?php _e(bloginfo('title'), 'simple-never-theme'); ?>">
+                    <?php _e(bloginfo('title'), 'simple-never-theme'); ?>
                 </a>
             </div>
             <div class="description">
-                <?php _e(bloginfo('description')); ?>
+                <?php _e(bloginfo('description'), 'simple-never-theme'); ?>
             </div>
         </div>
         <div class="header_menu">

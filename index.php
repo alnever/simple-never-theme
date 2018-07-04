@@ -11,14 +11,14 @@
             <!-- start post record -->
             <div class="entry" id="entry-<?php the_ID(); ?>">
                 <h2>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <?php the_title(); ?>
                     </a>
                 </h2>
                 <?php the_post_thumbnail(); ?>
                 <?php the_excerpt(); ?>
                 <div class="postmetadata">
-                    <p><?php _e("Author"); _e(": "); the_author_posts_link(); ?> <?php the_date("Y-m-d","[", "]", true) ?></p>
+                    <p><?php _e("Author", 'simple-never-theme'); _e(": "); the_author_posts_link(); ?> <?php the_date("Y-m-d","[", "]", true) ?></p>
                 </div>
             </div>
             <!-- end post -->
