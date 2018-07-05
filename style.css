@@ -478,6 +478,60 @@ th {
     background-color: #005b0b;
 }
 
+/* comments */
 
+.comment-body {
+    display: block;
+    font-size:12px;
+    margin-bottom: 10px;
+    border: dotted 1px #303030;
+    padding: 5px 5px 5px 5px;
+    min-height: 84px;
+}
 
+.comment-body > div:not(.comment-author) {
+    padding-left: 60px;
+}
 
+.comment-author img.avatar {
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+li.comment {
+    display: block;
+    width: auto;
+    list-style-type: none;
+}
+
+.comment-respond {
+    display: block;
+    font-size: 12px;
+}
+
+.comment-respond > h3 {
+    padding-left: 0;
+}
+
+.comment-form,
+.comment-form-comment {
+    display: block;
+    width: auto;
+}
+
+.comment-form-comment > textarea {
+    width: 100%;
+}
+
+.comment-form .submit {
+    font-size: 12px;
+    font-family: ubuntu;
+    border: solid 1px #000000;
+    background-color: #d2a519;
+    padding: 5px 5px 5px 5px;
+}
+
+.comment-form .submit:hover {
+    color: #ffffff;
+    background-color: #005b0b; 
+}
