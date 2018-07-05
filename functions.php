@@ -42,5 +42,19 @@ function register_menus() {
    );
 }
 
+// add custom logo
+add_theme_support( 'custom-logo' );
+add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+function themename_custom_logo_setup() {
+    $defaults = array(
+        'height'      => 300,
+        'width'       => 300,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+
 
 ?>

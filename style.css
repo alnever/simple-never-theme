@@ -9,7 +9,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: simple-never-theme
 Domain Path: /languages
-Tags: one-column, left-sidebar, custom-menu, featured-images, translation-ready, blog
+Tags: one-column, left-sidebar, custom-menu, custom-logo, featured-images, threaded-comments, translation-ready, blog
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -200,7 +200,7 @@ th {
     display: block;
     width: 20%;
     float: left;
-    padding: 5px 5px 5px 5px;
+    padding: 0px 5px 5px 5px;
 }
 
 .sidebar li.categories > ul, .sidebar aside ul 
@@ -248,6 +248,10 @@ th {
     margin-top: 40px;
 }
 
+.footer a, .footer a:active, .footer a:visited, .footer a:hover {
+    color: #a0a0a0;
+}
+
 /* posts */
 
 .entry {
@@ -280,7 +284,7 @@ th {
 
 .size-post-thumbnail {
     max-width: 300px;
-    max-height: 150px;
+    max-height: 225px;
     width: auto;
     height: auto;
 }
@@ -340,6 +344,10 @@ th {
     display: table;
     width: 100%;
     background: #394400;
+}
+
+.mobile_header_menu {
+    display: none;
 }
 
 /* --- 1st menu level ---*/
@@ -489,6 +497,11 @@ th {
     min-height: 84px;
 }
 
+.comment-list,
+.comments-title {
+    padding-left: 0;
+}
+
 .comment-body > div:not(.comment-author) {
     padding-left: 60px;
 }
@@ -534,4 +547,11 @@ li.comment {
 .comment-form .submit:hover {
     color: #ffffff;
     background-color: #005b0b; 
+}
+
+/* custom logo */
+.custom-logo {
+    float: center;
+    // border-radius: 50%;      /* round image */
+    // filter: grayscale(100%); /* grayscale image */
 }

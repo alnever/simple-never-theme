@@ -8,7 +8,8 @@
         <meta name="description" content="Simpe Worpress Theme for a Personal Blog" />
 
         <!-- styles -->
-        <link rel="stylesheet" id="main-style-sheet" href="<?php _e(bloginfo('stylesheet_url')); ?>" type="text/css" />
+        <link rel="stylesheet" id="main-style-sheet" href="<?php _e(bloginfo('stylesheet_url')); ?>" type="text/css" media="all" />
+        <link rel="stylesheet" id="mobile-style-sheet" href="<?php _e(bloginfo('template_url')); ?>/css/mobile.css" type="text/css" media="screen and (max-width:600px)" />
         
         <!-- title -->
         <title><?php _e(strip_tags(get_the_title()), 'simple-never-theme'); ?><?php _e(bloginfo('name'), 'simple-never-theme'); ?></title>
@@ -35,6 +36,15 @@
         <div class="header_menu">
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </div>
+        <div class="mobile_header_menu">
+            <span class="mobile_menu_start">
+                &equiv;&nbsp;<?php _e("Menu",'simple-never-theme'); ?>
+            </span>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+        </div>
+        
+
+        
         
     
 
