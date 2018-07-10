@@ -1,4 +1,4 @@
-Theme Name: Simpe Never Thene
+Theme Name: Simpe Never Theme
 Theme URI: https://github.com/alnever/simple-never-theme/
 Author: Alex Neverov
 Author URI: http://alneverov.ru

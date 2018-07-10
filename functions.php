@@ -20,7 +20,7 @@ add_action( 'widgets_init', 'simple_never_widgets_init' );
 
 function simple_never_widgets_init() {
     register_sidebar( array(
-        'name'          => __( 'Left Sidebar', 'simplenevertheme' ),
+        'name'          => __( 'Left Sidebar', 'simple-never-theme' ),
         'id'            => 'left_sidebar',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget'  => '</aside>',
